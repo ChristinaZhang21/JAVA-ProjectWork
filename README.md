@@ -1,7 +1,7 @@
 # JAVA-ProjectWork
 Java课程作业项目仓库
 
-#阅读程序
+# 阅读程序
 
 ## 一、实验目的
 1. 学会使用JAVA编写简单的类，理解类的属性与方法，熟悉JAVA的构造方法
@@ -19,9 +19,13 @@ Java课程作业项目仓库
 - 在CPU类中定义的setSpeed（int）方法设置逻辑判断，speed需大于0。
 ## 三、核心代码
 1. 方法一
+pc类中的赋值方法
 ```
 public void setCpu(CPU c){
-	this.cpu=c;
+		this.cpu=c;
+	}
+	public void setHardDisk(HardDisk h){
+		this.HD=h;
 	}
 ```
 2. 方法二
@@ -31,6 +35,7 @@ public void setHardDisk(HardDisk h){
 	} 
 ```
 3. 方法三
+pc类中的show（）方法
 ```
 public void show(){
 	System.out.println("CPU的速度为："+cpu.getSpeed()+"
@@ -38,6 +43,8 @@ public void show(){
 	}
 ```
 4. 方法四
+CPU类中进行简单逻辑判断speed是否大于0的方法
+
 ```
 public void setSpeed(int m){
 		if(m<0){
