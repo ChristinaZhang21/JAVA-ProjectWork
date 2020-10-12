@@ -24,15 +24,20 @@ pc类中的赋值方法
 public void setCpu(CPU c){
 		this.cpu=c;
 	}
-	public void setHardDisk(HardDisk h){
+public void setHardDisk(HardDisk h){
 		this.HD=h;
 	}
 ```
 2. 方法二
+cpu类的两个构造方法
 ```
-public void setHardDisk(HardDisk h){
-	this.HD=h;
-	} 
+public CPU(){
+		super();
+		//第一个构造方法
+	}
+	CPU(int speed,double price){
+		//第二个构造方法
+	}
 ```
 3. 方法三
 pc类中的show（）方法
@@ -53,6 +58,19 @@ public void setSpeed(int m){
 			this.speed=m;
 		}
 	}
+```
+5. 方法五
+主类中实例化其他类对象
+
+```
+CPU cpu=new CPU();             
+cpu.setSpeed(2200);            
+HardDisk disk=new HardDisk();  
+disk.setAmount(200);           
+PC pc=new PC();                
+pc.setCpu(cpu);                
+pc.setHardDisk(disk);          
+pc.show();                     
 ```
 ## 四、实验结果
 
